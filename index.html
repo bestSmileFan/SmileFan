@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index_fxh.css"/>
+    <link rel="stylesheet" href="css/index1.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/common.js.js"></script>
+    <style>
+        audio{
+            position: absolute;
+            top: 1100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!--header-->
+<!--侧栏导航开始-->
+<div class="newYear">
+    <div class="left" id="open"></div>
+
+    <div class="imgg" id="imgg">
+    </div>
+    <div class="right" id="close"></div>
+</div>
+
+<script>
+    (function(){
+        var open = document.getElementById("open");
+        var imgg = document.getElementById("imgg");
+        var newImg = document.getElementById("newImg");
+        var close = document.getElementById("close");
+        close.onclick = function () {
+            animate(imgg, {"width": 0, "left": 1270}, function () {
+                animate(open, {"left": 0});
+            });
+            animate(this, {"opacity": 0});
+        }
+        open.onclick = function () {
+            animate(open, {"left": -189});
+            animate(imgg, {"width": 1180, "left": 680});
+            animate(close, {"opacity": 1});
+        }
+    })()
+
+</script>
+
+<!--侧栏导航结束-->
+<!--头部动态logo_cloud开始-->
+<div class="sky" id="sky">
+    <div class="clouds_one"></div>
+    <div class="clouds_three"></div>
+    <div class="head_logo">
+        <img src="images/logo1.png" alt="北京天空婚纱摄影LOGO"/></a>
+    </div>
+</div>
+<!--头部动态logo_cloud结束-->
+<!--导航栏开始-->
+<div class="header">
+    <div class="nav" id="nav">
+        <ul id="nva_ul">
+            <li>
+                <a href="../天空婚纱首页/index_fxh.html" class="top"></a>
+                <div class="navSpan">
+                    <a href="javascript:;">婚纱摄影</a>
+                    <a href="javascript:;">婚纱照</a>
+                    <a href="javascript:;">手机版</a>
+                </div>
+            </li>
+            <li><a href="../吴丽芳关于天空/wlf.html" target="_blank" class="top"></a>
+                <div class="navSpan">
+                    <a href="javascript:;">品牌优势</a>
+                    <a href="javascript:;">经营理念</a>
+                    <a href="javascript:;">服务流程</a>
+                    <a href="javascript:;">联系天空</a>
+                </div>
+            </li>
+            <li><a href="../俞尔康作品欣赏1/index-yu.html" target="_blank" class="top"></a>
+
+                <div class="navSpan">
+                    <a href="javascript:;">外景婚纱照</a>
+                    <a href="javascript:;">内景婚纱照</a>
+                    <a href="javascript:;">古装穿越婚纱照</a>
+                    <a href="javascript:;">个人艺术写真</a>
+                    <a href="javascript:;">水下婚纱照</a>
+                </div>
+            </li>
+            <li><a href="index-yu.html" class="top"></a></li>
+            <li><a href="../时宝鑫最美新娘/index.html" target="_blank" class="top"></a></li>
+            <li><a href="../张祥西新闻001/newsHtml.html" target="_blank" class="top"></a>
+                <div class="navSpan">
+                    <a href="javascript:;">婚纱摄影优惠活动</a>
+                    <a href="javascript:;">婚纱摄影新闻资讯</a>
+                    <a href="javascript:;">婚纱摄影注意事项</a>
+                    <a href="javascript:;">北京水下婚纱照</a>
+                    <a href="javascript:;">北京太庙婚纱照</a>
+                    <a href="javascript:;">婚纱照风格</a>
+                </div>
+            </li>
+            <li><a href="../婚纱礼服张红/zhhslw.html" target="_blank" class="top"></a></li>
+        </ul>
+        <div class="currentBg"></div>
+    </div>
+</div>
+<!--导航栏结束-->
+
+<!--轮播图开始-->
+<div class="banner">
+    <div class="bd" id="slider_bd">
+        <ul class="imgul">
+            <li class="one"><a href="javascript:;"></a></li>
+            <li class="two"><a href="javascript:;"></a></li>
+            <li class="three"><a href="javascript:;"></a></li>
+            <li class="four"><a href="javascript:;"></a></li>
+        </ul>
+        <div class="arrow w" id="arrow">
+            <span class="prev" id="sprev"></span>
+            <span class="next" id="snext"></span>
+        </div>
+
+        <div class="supNav" id="supNav">
+            <ul class="linkImg">
+                <li><a class="a1" href="javascript:;">
+                    <dd></dd>
+                </a></li>
+                <li><a class="a2" href="javascript:;">
+                    <dd></dd>
+                </a></li>
+                <li><a class="a3" href="javascript:;">
+                    <dd></dd>
+                </a></li>
+                <li><a class="a4" href="javascript:;">
+                    <dd></dd>
+                </a></li>
+                <li><a class="a5" href="javascript:;"> <em class="twoCode">
+                    <img src="images/ewm.png" alt=""/>
+                </em></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--轮播图结束-->
+
+<!--最新风格开始-->
+<div class="style" id="style">
+    <div class="index_title">
+        <div class="title_style"></div>
+        <span>
+            <a href="javascript:;" class="sa1"
+                    >婚纱照图片</a>|
+            <a href="javascript:;" class="sa2"
+                    >北京婚纱摄影前十名</a>|
+            <a href="javascript:;" class="sa3">北京婚纱摄影外景地</a>|
+            <a href="javascript:;" class="sa4">婚纱照优惠活动</a>
+        </span>
+    </div>
+    <ul class="new_style" id="new_style">
+        <li>
+            <a href="">
+                <div>
+                    <img src="images/1453516970-8452.jpg" alt=""/>
+                </div>
+                <span>
+                     <h4 class="tra5">纯正韩式风</h4>
+                      <p>sky photography korean style</p>
+                      <p>
+                          5星级理遇金牌团队全程6对1贴心服务<br/>
+                          韩国H20空气裸妆、韩国品牌男装男神气场四射<br/>
+                          甄选属于您心中最美的婚纱
+                      </p>
+                      <em>LEARN MORE &#8250;&#8250;</em>
+                 </span>
+
+                <s class="h01"></s>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div>
+                    <img src="images/1453517162-7972.jpg" alt=""/>
+                </div>
+                <span>
+                  <h4 class="tra5">个性中国风</h4>
+                  <p>sky photography china style</p>
+                  <p>
+                      2015年全新中国风特别创意，对古典之美进行现代解读<br/>
+                      龙凤褂、蕾丝镂空裙、红灯笼、红色背景、红木座椅<br/>
+                      中国红民族风引领个性潮流，变身时尚中国新娘
+                  </p>
+                  <em>LEARN MORE &#8250;&#8250;</em>
+                </span>
+                <s class="h02"></s>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div>
+                    <img src="images/1427538290-3542.jpg" alt=""/>
+                </div>
+                <span>
+                  <h4 class="tra5">创意水下摄影</h4>
+                  <p>sky photography water style</p>
+                  <p>
+                      干净环保的放心水质，四季均可拍摄的恒温基地<br/>
+                      360°周密安全的防护措施，不会游泳也能纵情拍摄<br/>
+                      心随泳动，畅拍蔚蓝
+                  </p>
+                  <em>LEARN MORE &#8250;&#8250;</em>
+                 </span>
+                <s class="h03"></s>
+            </a>
+        </li>
+    </ul>
+    <div class="style_bottom">
+        <ul>
+            <li>
+                <a>
+                    <img src="images/img1.png" alt="档期"/>
+                    <p>北京天空摄影档期情况请咨询客服<br/>请在婚期确认前3-6个月进行预约</p>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <img src="images/img2.png" alt="咨询"/>
+
+                    <p>天空摄影<b class="r00">北京婚纱摄影工作室</b><br/>请您选择最近的服务中心进行咨询</p>
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    <img src="images/img3.png" alt="客服"/>
+
+                    <p>金牌5星企划爱的叮咛<br/><b class="r00">请选择您最近的服务中心进行咨询</b></p>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="clearfix"></div>
+
+        <h1>北京婚纱摄影</h1>
+
+        <p class="p1">中国婚纱摄影幸福影像领导品牌【<span style="color:#ff0000;">北京天空摄影</span>】专注个性北京婚纱照创作10年,其独有_真实_简单_幸福_自然_的婚纱照风格深受客户喜好；旗下拥有独家室内-塞纳影城婚纱摄影基地以及12条经典外景婚纱照基地。独有的5星级企划全程6对1服务流程独占<a
+                href="http://www.skyphoto.com.cn" title=""><strong>北京婚纱摄影工作室</strong></a>好口碑鳌首!</p>
+
+        <p class="p1">
+            点击了解：天空婚纱摄影品牌特质6大优势品牌优势：品牌实体店面、精品婚纱礼服、原创婚纱照作品、独家内景塞纳影城、12大婚纱照外景地、高级相册成品。实名制微点评以及八大服务承诺！摄影工作室行业先驱者，抵制伪样片，独立研发团队引领婚纱摄影潮流！</a></p>
+
+    </div>
+</div>
+
+<!--最新风格结束-->
+<script>
+    (function () {
+        var style = document.getElementById("style");
+        var imgs = style.getElementsByTagName("img");
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].ind = i;
+            imgs[i].onmouseover = function () {
+                animate(imgs[this.ind], {height: 360, width: 410, left: -10, top: -10})
+            }
+            imgs[i].onmouseout = function () {
+                animate(imgs[this.ind], {height: 340, width: 390, left: 0, top: 0})
+            }
+        }
+    })();
+
+</script>
+
+<div class="style" id="style_theme">
+    <div class="index_title">
+        <div class="title_style themee"></div>
+        <span>
+            <a href="javascript:;" class="sa1"
+                    >婚纱照图片</a>|
+            <a href="javascript:;" class="sa2"
+                    >北京婚纱摄影前十名</a>|
+            <a href="javascript:;" class="sa3">北京婚纱摄影外景地</a>|
+            <a href="javascript:;" class="sa4">婚纱照优惠活动</a>
+        </span>
+    </div>
+</div>
+
+<div class="theme">
+    <div class="bd" id="theme_bd">
+        <ul>
+            <li class="one">
+                <a href="javascript:;" target="_blank">
+                    <img src="images/theme001.jpg"></a></li>
+
+            <li class="two">
+                <a href="javascript:;" target="_blank">
+                    <img src="images/1472456190-8829.jpg">
+                </a>
+            </li>
+
+            <li class="three">
+                <a href="javascript:;" target="_blank">
+                    <img src="images/1478160711-3039.jpg">
+                </a>
+            </li>
+
+            <li class="four">
+                <a href="javascript:;" target="_blank">
+                    <img src="images/1461571046-9811.jpg">
+                </a>
+            </li>
+
+            <li class="five">
+                <a href="javascript:;" target="_blank">
+                    <img src="images/1450177030-8578.jpg"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="hd" id="theme_hd">
+
+        <div class="hoverBg" id="hoverBg"></div>
+
+        <ul>
+
+            <li><a><img src="images/1478160754-4709.jpg" alt="冬季27度温室热带雨林外景图片"></a></li>
+
+            <li><a><img src="images/1472456195-2136.jpg" alt="拉斐特城堡童话婚纱照图片"></a></li>
+
+            <li><a><img src="images/1478160713-754.jpg" alt="最新北京太庙婚纱照最美北京系列图片"></a></li>
+
+            <li><a><img src="images/1461571050-1242.jpg" alt="天空摄影八大核心优势！图片"></a></li>
+
+            <li><a><img src="images/1450177033-8002.jpg" alt="北京水下婚纱照图片图片"></a></li>
+
+        </ul>
+
+    </div>
+</div>
+
+<!--//主题下面的链接-->
+<div class="clearfix"></div>
+<div class="theme_link_last">
+    <div class="theme_link wrap">
+
+        <img src="images/themebg1.png" alt="最新婚纱照作品"/>
+
+    <span>最新推荐风格：<a href="http://www.skyphoto.com.cn/fengge/hanshi/">韩式style婚纱照系列</a>&nbsp;&nbsp;&nbsp;<a
+            href="http://www.skyphoto.com.cn/fengge/newchina/">中国新娘系列</a>&nbsp;&nbsp;&nbsp;<a
+            href="http://www.skyphoto.com.cn/huodong/shuixia/">水下婚纱照系列</a>&nbsp;&nbsp;&nbsp;<a target="_blank"
+                                                                                               href="http://www.skyphoto.com.cn/service.html">婚纱摄影价格表</a>&nbsp;&nbsp;&nbsp;<a
+            target="_blank" href="http://www.skyphoto.com.cn/zhuanti/paiming.html">北京婚纱摄影排名</a></span>
+
+    </div>
+</div>
+<div class="hr1"></div>
+
+<!--//最新作品开始-->
+<div class="style" id="style_works">
+    <div class="index_title">
+        <div class="title_style works"></div>
+        <span>
+            <a href="javascript:;" class="sa1"
+                    >婚纱照图片</a>|
+            <a href="javascript:;" class="sa2"
+                    >北京婚纱摄影前十名</a>|
+            <a href="javascript:;" class="sa3">北京婚纱摄影外景地</a>|
+            <a href="javascript:;" class="sa4">婚纱照优惠活动</a>
+        </span>
+    </div>
+    <div class="horse" id="horse">
+        <div class="slide" id="horse_slide">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/1.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit"> 冬天拍婚纱照《笑靥如春》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/2.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit">时尚冬季婚纱照《春风不及卿》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/3.jpg" alt=""/>
+                        <span class="tra5">
+                              <h3 class="tit">北京太庙婚纱照相片《凤舞》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/4.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit">太庙风婚纱照《霓裳羽衣》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/5.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit">欧式城堡婚纱照《玫瑰》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/6.jpg" alt=""/>
+                        <span class="tra5">
+                              <h3 class="tit">北京法式城堡婚纱照《罗马风情》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/7.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit">水下创意婚纱照《水下求婚》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                          </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <img src="images/8.jpg" alt=""/>
+                         <span class="tra5">
+                              <h3 class="tit">中式红色礼服婚纱照《缔结良缘》</h3>
+                              <em>sky &nbsp; photography</em>
+                              <i>> MORE PHOTO</i>
+                         </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="arrow" id="arrow_house">
+                <a href="javascript:;" class="prev" id="arrLeft"></a>
+                <a href="javascript:;" class="next" id="arrRight"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--最新作品结束-->
+
+<!--侧边栏开始-->
+
+<div class="leftNav" id="leftNav">
+    <div class="link1 one">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 two">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 three">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 four">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 five">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 six">
+        <a href="javascript:;"></a>
+    </div>
+    <div class="link1 seven">
+        <a href="javascript:;"></a>
+    </div>
+
+</div>
+
+<script>
+    //左边侧栏
+    (function () {
+        var leftNav = document.getElementById("leftNav");
+        var timer = null;
+        var leader = 0;
+        var tt = 0;
+
+        function scroll() {
+            return {
+                top: window.pageYOffset || document.documentElement.offsetTop || document.body.offsetTop || 0,
+                left: window.pageYOffset || document.documentElement.offsetLeft || document.body.offsetLeft || 0
+            }
+        }
+
+        window.onscroll = function () {
+            if (scroll().top > 300) {
+                animateNav(leftNav.children[0], {height: 0})
+                animateNav(leftNav.children[6], {height: 80})
+            } else {
+                animateNav(leftNav.children[0], {height: 80})
+                animateNav(leftNav.children[6], {height: 0})
+            }
+            leader = scroll().top;
+            if (leader === 0) {
+                clearInterval(timer)
+            }
+        }
+        leftNav.children[6].onclick = function () {
+
+            timer = setInterval(function () {
+                var leader = scroll().top;
+                var step = (tt - leader) / 10;
+                window.scrollTo(0, (leader + step));
+            }, 15);
+        }
+    })()
+
+//    var leftNav = document.getElementById("leftNav");
+//    var divs = leftNav.getElementsByTagName("div");
+//    for (var i = 0; i < divs.length; i++) {
+//        divs[i].onmouseover = function () {
+//            this.children[0].style.display = "block";
+//        }
+//        divs[i].onmouseout = function () {
+//            this.children[0].style.display = "none";
+//        }
+//    }
+
+        $(function(){
+            $(".link1").mouseenter(function(){
+                $(this).children("a").show();
+            })
+            $(".link1").mouseleave(function(){
+                $(this).children("a").hide();
+            })
+        })
+</script>
+<!--侧边栏结束-->
+
+<!--十大经典开始-->
+<div class="wrap wrap_jingd">
+    <div class="index_title">
+        <b>优质经典北京婚纱照外景地拍摄线路，用场地告诉您北京婚纱摄影哪家好，庄园摄影基地引领北京婚纱摄影工作室，选择北京婚纱照和北京婚纱摄影团购这里首选。</b>
+        <li class="title_loc"></li>
+        <ul>
+            <li><a target="_blank" href="#">北京婚纱摄影外景地</a>|</li>
+            <li><a target="_blank" href="#" class="b02">2㎡内景-爱诺庄园</a>|</li>
+            <li><a target="_blank" href="#">韩式STYLE</a>|</li>
+            <li><a target="_blank" href="#" class="b04">中国风系列</a>|</li>
+            <li><a target="_blank" href="#">水下婚纱摄影</a>|</li>
+            <li><a target="_blank" href="#">薰衣草婚纱照</a>|</li>
+            <li><a target="_blank" href="#">独家威廉马场</a>|</li>
+            <li><a target="_blank" href="#">27℃温室影城</a>|</li>
+            <li><a target="_blank" href="#">海景旅拍</a>|</li>
+            <li><a target="_blank" href="#">城堡建筑系</a></li>
+        </ul>
+    </div>
+    <div class="kl">
+        <div id="slider" class="clearfix">
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1421993278-5171.jpg" alt="01北京拍内景婚纱照-天空2万㎡爱诺庄园婚纱摄影基地"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1421993893-2665.jpg" alt="02韩式婚纱摄影风格-天空韩式style婚纱照片欣赏"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1421994432-9242.jpg" alt="03中国风婚纱照系列-太庙/天坛外景婚纱摄影基地"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1421995062-4601.jpg" alt="04水下婚纱照-水下婚纱摄影第一品牌-天空摄影"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1421997414-6944.jpg" alt="05薰衣草婚纱摄影基地-蓝调托斯卡纳拍多种花海婚纱照风格"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1422001808-2558.jpg" alt="06威廉马场外景婚纱照-个性婚纱摄影外景地"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1422003023-3773.jpg" alt="07冬天拍婚纱照首选27℃温室影城外景婚纱摄影基地"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1422003507-6624.jpg" alt="08海边婚纱摄影选海景旅拍三亚婚纱照/北戴河婚纱照外景基地"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1422004105-2588.jpg" alt="09城堡建筑系列婚纱摄影外景基地拍欧式风格婚纱照"/>
+                </a>
+            </div>
+            <div class="slider">
+                <a href="#">
+                    <img src="images/1422005174-7228.jpg" alt="10小清新婚纱照风格,田园韩式婚纱摄影基地推荐"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="loc" id="loc">
+        <a href="#" title="婚纱照外景地"></a>
+    </div>
+</div>
+<div class="hr1"></div>
+<!--十大经典完-->
+<!--客片欣赏-->
+<!--<audio src="0.2.mp3" controls="controls"></audio>-->
+<div class="wrap">
+    <div class="index_title">
+        <b>优质经典北京婚纱照外景地拍摄线路，用场地告诉您北京婚纱摄影哪家好，庄园摄影基地引领北京婚纱摄影工作室，选择北京婚纱照和北京婚纱摄影团购这里首选。</b>
+        <li class="title_guest"></li>
+        <ul class="mg">
+            <li><a target="_blank" href="#">中国婚照典范恭迎挑剔目光</a>|</li>
+            <li><a target="_blank" href="#" class="b02">直击幸福现场每日客片速递</a>|</li>
+            <li><a target="_blank" href="#" class="b04">为幸福点赞，为爱加油</a>|</li>
+            <li><a target="_blank" href="#">咨询档期及拍摄相关</a></li>
+        </ul>
+    </div>
+</div>
+<div class="i_love">
+    <div class="NEW_love_pic">
+        <div class="pic"></div>
+        <div class="fg_box">
+            <img src="images/bg57.png" alt="客片"/>
+
+            <div id="0852691" class="Innovation">
+                <ul>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg1"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg2"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg3"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg4"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg5"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg6"></dl>
+                    </li>
+                    <li>
+                        <dl><img src="images/bar.png" id="mg7"></dl>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" title="新娘秀" class="a1" id="a1"></a>
+            <a href="#" title="新娘秀" class="a2" id="a2"></a>
+        </div>
+    </div>
+</div>
+<div class="wrp">
+    <ul class="index_guest" id="index_guest">
+        <li>
+            <a href="#">
+                <dt class="tra5"></dt>
+                <img src="images/1483411817-3745.jpg" alt="Mr.臧Ms.于">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <dt class="tra5"></dt>
+                <img src="images/1483330326-2295.jpg" alt="Mr.臧Ms.于">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <dt class="tra5"></dt>
+                <img src="images/1483244942-3068.jpg" alt="Mr.臧Ms.于">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <dt class="tra5"></dt>
+                <img src="images/1483155629-596.jpg" alt="Mr.臧Ms.于">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <dt class="tra5"></dt>
+                <img src="images/1483073700-996.jpg" alt="Mr.臧Ms.于">
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="theme_link wrp">
+    <img src="images/themebg1.png" alt="最美婚纱照"/>
+    <span>
+        "最新推荐风格："
+        <a target="_blank" href="#">韩式style婚纱照系列</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">中国新娘系列</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">水下婚纱照系列</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">凤冠霞帔婚纱照</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">薰衣草婚纱摄影</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">水下婚纱照</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">反串婚纱照</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">另类婚纱照</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="#">闺蜜照</a>&nbsp;&nbsp;&nbsp;
+    </span>
+</div>
+<div class="hr1"></div>
+<!--客片欣赏完-->
+<!--享誉国内外-->
+<div class="wrp">
+    <div class="index_title">
+        <b>优质经典北京婚纱照外景地拍摄线路，用场地告诉您北京婚纱摄影哪家好，庄园摄影基地引领北京婚纱摄影工作室，选择北京婚纱照和北京婚纱摄影团购这里首选。</b>
+        <li class="title_guest"></li>
+        <span>
+            <a href="#">金牌5星企划服务流程，我们愿给您最完美的细节保障</a>
+        </span>
+    </div>
+    <div id="s2" class="s2">
+        <a href="http://cloud.video.taobao.com/play/u/10587033/p/1/e/1/t/1/46624760.swf" rel="lyteframe"
+           rev="width: 800px; height: 600px; ">
+            <img class="lz" src="images/v11.jpg" alt="天空摄影介绍">
+            <i></i>
+        </a>
+    </div>
+    <div id="sc2" class="sc2">
+        <ul>
+            <li>
+                <a href="#" title="中国建筑之美">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281461-9524.jpg" alt="中国建筑之美">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>中国建筑之美</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="太庙婚纱照创作电影">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281223-3059.jpg" alt="太庙婚纱照创作电影">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>太庙婚纱照创作电影</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="冬季温室植物园婚纱照">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281203-1932.jpg" alt="冬季温室植物园婚纱照">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>冬季温室植物园婚纱照</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="拉斐特婚纱照电影">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281186-1507.jpg" alt="拉斐特婚纱照电影">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>拉斐特婚纱照电影</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="水下婚纱照微电影">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281139-5875.jpg" alt="水下婚纱照微电影">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>水下婚纱照微电影</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="后海胡同街拍婚纱照">
+                    <div class="t1">
+                        <img class="lz" src="images/1481281678-7188.jpg" alt="后海胡同街拍婚纱照">
+                        <span></span>
+                    </div>
+                    <div class="t2">
+                        <h3>后海胡同街拍婚纱照</h3>
+                        <span>sky time 2016-07-15</span>
+                        <h6>&gt; View video</h6>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="fullSlide">
+        <div class="db" id="db">
+            <ul>
+                <li class="lis0">
+                    <a href="#">
+                        <img src="images/22.jpg" alt=""/>
+                    </a>
+                </li>
+                <li class="lis1">
+                    <a href="#">
+                        <img src="images/11.jpg" alt=""/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="hb" id="hb">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <img src="images/copy.jpg" alt=""/>
+    <!--新闻-->
+    <div class="index_news" id="index_news">
+        <ul class="fl" id="fl">
+            <li>
+                <a href="#" title="北京好点的婚纱摄影店">北京好点的婚纱摄影店</a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱摄影拍摄基地">北京婚纱摄影拍摄基地</a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱摄影哪家强">北京婚纱摄影哪家强</a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱摄影什么价位">北京婚纱摄影什么价位</a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱摄影哪家拍的好">北京婚纱摄影哪家拍的好</a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱摄影工作室性价比高">北京婚纱摄影工作室性价比高</a>
+            </li>
+            <li>
+                <a href="#">查看更多信息 >></a>
+            </li>
+        </ul>
+        <ul class="fr" id="fr">
+            <li>
+                <a href="#" title="北京拍婚纱照外景最好的地方">
+                    <b>北京拍婚纱照外景最好的地方</b>
+                    <br/>
+                    <samp>如今北京婚纱照外景已经成为必不可少的部分，因此现在有众多北京拍婚纱照外景地点可供选择，恰恰如此，很多新人不知道到...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title=" 北京婚纱摄影工作室哪家口碑好 ">
+                    <b> 北京婚纱摄影工作室哪家口碑好 </b>
+                    <br/>
+                    <samp>目前北京婚纱摄影工作室正在向更专业的服务行业转型，一方面对于创作的个性创意要求更高，另一方面对于服务的细致性也是...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="北京婚纱影楼排行榜">
+                    <b>北京婚纱影楼排行榜</b>
+                    <br/>
+                    <samp>如今的婚纱影楼已不再是早期的运营模式，因此对于工作室和影楼的区别来说也越来越小，而北京婚纱影楼更在于规模，其余差...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="中国风婚纱照片欣赏">
+                    <b>中国风婚纱照片欣赏</b>
+                    <br/>
+                    <samp>如今的北京婚纱摄影风格中，韩式风格婚纱照和中国风婚纱照各领半壁江山，各种创意中国风婚纱摄影主题层出不穷，做为中国...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="北京个性婚纱照片欣赏 ">
+                    <b>北京个性婚纱照片欣赏 </b>
+                    <br/>
+                    <samp>如今很多北京80后创意婚纱照都在追求个性特色，搞怪的韩式风格婚纱照，温馨的古装婚纱照，无一不是对于时尚个性婚纱照...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="80后另类婚纱照片欣赏">
+                    <b>80后另类婚纱照片欣赏</b>
+                    <br/>
+                    <samp>如今的年轻新人喜欢个性，喜欢创意，也有称之为另类的，但是另类婚纱照片不是标新立异，而是用不同角度来记录不一样的幸...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="唯美婚纱照片欣赏">
+                    <b>唯美婚纱照片欣赏</b>
+                    <br/>
+                    <samp>浪漫唯美是很多新人对于婚纱照的要求，尤其是部分喜欢90后韩式婚纱摄影的新人，但是优秀的唯美婚纱照片欣赏应该是什么...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="个性欧美婚纱照片欣赏">
+                    <b>个性欧美婚纱照片欣赏</b>
+                    <br/>
+                    <samp>相对于中国人的婚纱照来说，欧美婚纱摄影更加最易注重创意，有趣的场景，好玩的姿势动作都是欧美婚纱图片的特点，这里天...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="北京冬天拍婚纱照好看吗">
+                    <b>北京冬天拍婚纱照好看吗</b>
+                    <br/>
+                    <samp>北京的冬季相对还是比较寒冷的，对于年底婚期想要拍婚纱照的新人来说，这个季节最大的困难就是天气，我们会质疑北京冬天...</samp>
+                    <br/>
+                    <span>READ MORE TIPS +</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!--享誉国完-->
+<!--尾巴-->
+<div class="footer">
+    <div class="wrap">
+        <a href="#" class="link">
+            <img src="images/foot1.jpg" alt="爱上天空摄影的理由"/>
+        </a>
+        <span id="cloud"></span>
+        <ul id="navBar">
+            <li>
+                <a href="#" title="北京工作室哪家好">北京工作室</a>
+                <ul >
+                    <li><a href="#">北京婚纱摄影</a></li>
+                    <li><a href="#">品牌优势</a></li>
+                    <li><a href="#">婚纱照团购</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="北京工作室哪家好">天空摄影</a>
+                <ul >
+                    <li><a href="#">品牌介绍</a></li>
+                    <li><a href="#">品牌优势</a></li>
+                    <li><a href="#">婚纱照团购</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="北京工作室哪家好">北京工作室</a>
+                <ul >
+                    <li><a href="#">北京婚纱摄影</a></li>
+                    <li><a href="#">品牌优势</a></li>
+                    <li><a href="#">婚纱照团购</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="北京工作室哪家好">北京工作室</a>
+                <ul >
+                    <li><a href="#">北京婚纱摄影</a></li>
+                    <li><a href="#">品牌优势</a></li>
+                    <li><a href="#">婚纱照团购</a></li>
+                </ul>
+            </li>
+            <li class="kk">
+                <a href="#" title="北京工作室哪家好">北京工作室</a>
+                <ul>
+                    <li><a href="#">北京婚纱摄影</a></li>
+                    <li><a href="#">品牌优势</a></li>
+                    <li><a href="#">婚纱照团购</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <img class="wz" src="images/wz.png" alt="一群人专注婚纱摄影行业"/>
+
+    <div class="wbwx">
+        <a href="#">
+            <img src="images/wb.png" alt=""/>
+        </a>
+        <a href="#" id="wx">
+            <img src="images/wx.png" alt=""/>
+            <span></span>
+        </a>
+    </div>
+</div>
+<div class="wrap tt">
+    <div class="footer_btm"></div>
+</div>
+
+<audio src="理查德.克莱德曼%20-%20Mariage%20d_amour%20(Paul%20de%20Senneville).mp3" autoplay="autoplay"  loop="loop" controls="controls"></audio>
+</body>
+</html>
+
+<script src="js/animateF.js"></script>
+<script src="js/index_fxh.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/snowfall.jquery.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
